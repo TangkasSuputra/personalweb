@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neil Tran Photography</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">NEIL TRAN</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            &#9776; <!-- Unicode character for hamburger menu icon -->
+        </div>
+    </header>
+
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#" onclick="showMain()">MAIN</a></li>
+            <li><a href="#" onclick="showPortfolio()">PORTFOLIO</a></li>
+            <li><a href="#">ABOUT ME</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Overlay for closing the sidebar when clicking outside -->
+    <div class="overlay" id="overlay"></div>
+
+    <div id="content">
+        <!-- Halaman Utama -->
+        <div id="mainPage">
+            <div class="banner">
+                <h1 class="title">TRAN <span>PHOTOGRAPHY</span></h1>
+                <img src="beach.jpg" alt="Beach photo">
+                <div class="scroll-down">
+                    <span>&#8595;</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Halaman Portfolio -->
+        <div id="portfolioPage" style="display:none;">
+            <div class="portfolio">
+                <div class="photo-grid">
+                    <div><img src="beach.jpg" alt="Nature Photo 1"></div>
+                    <div><img src="beach.jpg" alt="Nature Photo 2"></div>
+                    <div><img src="beach.jpg" alt="Nature Photo 3"></div>
+                    <div><img src="beach.jpg" alt="Nature Photo 4"></div>
+                    <div><img src="beach.jpg" alt="Nature Photo 5"></div>
+                    <div><img src="beach.jpg" alt="Nature Photo 6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
