@@ -167,6 +167,108 @@ header {
     margin-top: 10px;
 }
 
+
+/* About and Contact Sections */
+.about, .contact {
+    padding: 20px;
+    background-color: #f5f5ef;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about h2, .contact h2 {
+    font-size: 24px;
+    color: #5e4c43;
+}
+
+.about p, .contact p {
+    color: #8b7a6a;
+    margin-top: 10px;
+}
+
+/* About Me Section */
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #f5f5ef; /* Light cream background */
+}
+
+.about-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1000px;
+    background-color: #f5f5ef; /* Light cream background */
+    border-radius: 0; /* Remove border-radius to match the flat design */
+    overflow: hidden;
+    box-shadow: none; /* Remove shadow for a flat, clean look */
+}
+
+.about-photo {
+    width: 40%; /* Restrict image width to match the layout */
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the div entirely */
+}
+
+.about-text {
+    padding: 50px 30px; /* Increase padding for more space around text */
+    background-color: #fff; /* White background for the text section */
+    color: #5e4c43;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-text h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #5e4c43;
+    letter-spacing: 3px;
+    font-family: 'Georgia', serif; /* Use a serif font for a classic look */
+}
+
+.about-text p {
+    color: #5e4c43; /* Darker text color for better readability */
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif; /* Use a sans-serif font for the body text */
+}
+
+.about-text p:last-child {
+    margin-bottom: 0; /* Remove margin from the last paragraph */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack photo and text vertically on smaller screens */
+    }
+
+    .about-photo, .about-text {
+        width: 100%; /* Full width for both sections */
+    }
+
+    .about-text {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-text h2 {
+        font-size: 20px; /* Smaller heading for very small screens */
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .logo {
