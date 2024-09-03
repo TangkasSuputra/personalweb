@@ -1,13 +1,22 @@
 function showMain() {
     document.getElementById('mainPage').style.display = 'block';
     document.getElementById('portfolioPage').style.display = 'none';
-    closeSidebar(); // Ensure sidebar is closed when switching to main page
+    document.getElementById('aboutPage').style.display = 'none';
+    closeSidebar(); // Close the navigation bar if it's open
 }
 
 function showPortfolio() {
     document.getElementById('mainPage').style.display = 'none';
     document.getElementById('portfolioPage').style.display = 'block';
-    closeSidebar(); // Ensure sidebar is closed when switching to portfolio page
+    document.getElementById('aboutPage').style.display = 'none';
+    closeSidebar(); // Close the navigation bar if it's open
+}
+
+function showAbout() {
+    document.getElementById('mainPage').style.display = 'none';
+    document.getElementById('portfolioPage').style.display = 'none';
+    document.getElementById('aboutPage').style.display = 'block';
+    closeSidebar(); // Close the navigation bar if it's open
 }
 
 function toggleMenu() {
